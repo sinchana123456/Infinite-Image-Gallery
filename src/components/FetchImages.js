@@ -26,20 +26,18 @@ function FetchImages() {
         <header>
             <h1>Unsplash Images</h1>
         </header>
-        <section className={classes.images}>
         <InfiniteScroll
             dataLength={images.length}
             next={getImages}
             hasMore={true}
             loader={<Loader />}
         >
-            <div>
+            <div className={classes.images}>
                 {images.map((image) => {
                     return(<Image key={image.id} {...image} />)
                 })}
             </div>
-            </InfiniteScroll>
-        </section>
+        </InfiniteScroll>
     </Fragment>
   )
 }
