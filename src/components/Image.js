@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import classes from './Images.module.css';
+import classes from './Image.module.css';
 
 function Image(props) {
   return (

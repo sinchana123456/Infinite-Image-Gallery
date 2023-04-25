@@ -1,10 +1,13 @@
-import FetchImages from "./components/FetchImages";
+import { Fragment } from "react";
+import ImageList from "./components/ImageList";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
-      <FetchImages />
-    </div>
+    <Fragment>
+      <Header />
+      <ImageList />
+    </Fragment>
   );
 }
 
